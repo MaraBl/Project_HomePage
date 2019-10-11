@@ -1,2 +1,2 @@
 # Project_HomePage
-Opticron Home Page project made from graphic's project. I used Foundation6.  
+Opticron Home Page made from graphic's project. I used Foundation6.  
