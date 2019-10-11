@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Istok+Web&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Istok Web', sans-serif;
+    text-align: center;
+}
+
+.grid-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+/* HEADER*/
+
+header {
+  font-size: 15px;
+  min-height: 20vh;
+  margin: 0;
+  width: 100%;
+  background-color: #e6e7e8;
+}
+
+header .grid-container{
+  min-height: 20vh;
+}
+
+header .logo  {
+  text-align: left;
+}
+
+.title-bar {
+  justify-content: flex-end;
+  padding: 1% 3%;
+  background-color: #e6e7e8;
+  color: #008542;
+}
+
+.menu {
+  color: #6f6f6e;
+}
+
+.menu-icon::after {
+    background:  #008542;
+    box-shadow: 0 7px 0  #008542, 0 14px 0  #008542;
+    -webkit-box-shadow: 0 7px 0  #008542, 0 14px 0  #008542;
+}
+
+.search-box {
+  cursor: pointer;
+  float: right;
+}
+
+.input-group-label {
+  padding: 0;
+  margin: 0;
+}
+
+.search-box i {
+  color: #fff;
+  background-color: #929497;
+  padding: 10px 10px;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #6f6f6e;
+}
+
+a:hover {
+  color: #008542; 
+}
+
+
+/*Slider*/
+
+.slider {
+  min-height: 380px;
+  margin: 0;
+}
+
+.slide1 {
+  min-height: 380px;
+  background-image: url("../img/couresel.png");
+  background-size: cover;
+  position: center;
+  margin: 0 auto;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+/* SECTION INFO*/
+
+
+.info {
+  padding-top: 4%;
+  color: #808184;
+  text-align: left;
+}
+
+.info .cell {
+	padding: 1%;
+}
+
+.info .cell>p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.info img {
+	width: 100%;
+	height: auto;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+.button {
+  color: #fff;
+  background-color: #008542;
+  min-width: 130px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #008542;
+  background-color: #e6e7e8;
+}
+
+
+/*OFFERS*/
+
+.offers {
+  background-color: #e6e7e8;
+  color: #808184;
+  padding: 1% 0;
+}
+
+.offers img {
+  width: 100%;
+  height: auto;
+}
+.offers .cell {
+  background-color: #fff;
+  margin: 2% 4%;
+}
+
+.offers .cell p {
+ margin: 1%;
+}
+
+.offers .button {
+  margin: 2%;
+}
+
+.price {
+	font-weight: bold;
+	color:#404041;
+}
+
+/*CATEGORIES*/
+
+.categories {
+  padding: 2% 0;
+}
+
+.categories h4 {
+  color: #808184;
+}
+
+.categories p {
+  padding: 5% 2%;
+  color: #808184;
+}
+
+.categories .orbit-slide {
+  background-color: #fff;
+  min-height: 280px;
+  background-image: none;
+}
+
+.categories .orbit-next #text,
+.categories .orbit-previous #text {
+  color: #bbbdbf;
+}
+
+.categories .orbit-next, 
+.categories .orbit-previous {
+  color: #bbbdbf;
+  top: 40%;
+}
+
+
+/*FOOTER*/
+
+footer {
+  background-color: #bbbdbf;
+  color: #fff;
+}
+
+footer .contact {
+	padding: 2% 0 3% 0;
+}
+
+footer .cell {
+  text-align: left;
+  padding: 3% 1%;
+}
+
+footer a {
+  color: #fff;
+}
+
+.address p {
+  font-size: 11px;
+  padding-bottom: 6%;
+}
+
+.social h3 {
+  margin-bottom: 0;
+}
+
+.social ul {
+  margin-left: 0;
+}
+
+.social li {
+  list-style: none;
+  font-size: 12px;
+}
+
+footer i.fa {
+  background: #bbbdbf;
+  color: white;
+  font-size: 13px;
+  padding: 4px 9px 4px 0;
+  margin: 5px;
+  float: left;
+  cursor: pointer;
+  border-right: solid 1px green; 
+}
+
+footer i.fa-google-plus {
+  border-right: none;
+}
+
+footer i.fa:hover {
+  color: #008542;
+}
+
+
+/* ====mobile===*/ 
+@media only screen and (max-width: 40em) { 
+  h4 {padding: 2%; font-size: 1.5rem;}
+  .menu {margin-left: 60%;}
+  .menu li {text-align: right; width: 100%;}
+  .form-icons {padding: 1% 5% 1% 50%;}
+  .grid-container{padding: 1% 2%;}
+  .info .cell {padding: 2% 10%;}
+  footer .contact {padding: 2%;}
+  .address{margin:0;}
+  .address p {font-size: 14px; padding-bottom: 0;}
+  footer i.fa{font-size: 15px;}
+  footer .social {margin-bottom: 5%;}
+  footer .social h3 {font-size: 25px;} 
+}
+
+/*====tablet===*/  
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  h4 {padding: 2%; font-size: 1.5rem;}
+  .menu {margin-left: 60%;}
+  .menu li {width: 100%;}
+  .form-icons {padding: 1% 5% 1% 60%;}
+  .contact .cell {padding: 0 5%;}
+  .address{margin:0;}
+  .address p {font-size: 14px; padding-bottom: 0;}
+  footer i.fa{font-size: 15px;}
+  footer .social {margin-bottom: 5%;}
+  footer .social h3 {font-size: 25px;}
+}
